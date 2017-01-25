@@ -45,6 +45,11 @@ int main(void)
     return 0;
 }
 
+
+
+
+
+
 void average_boundaries(void)
 {
     unsigned i, j;
@@ -114,6 +119,9 @@ void set_boundaries(unsigned num_r_peaks)
 
 }
 
+
+//this function reads all sample EKG data points from input file and stores these
+//data points into structs
 void populate_data(void)
 {
     char buffer[50];
@@ -167,6 +175,8 @@ void populate_data(void)
         token = strtok(NULL, ",");
         test.samples[num_samples].voltage = atof(token);        //loads data point voltage into Data_Sample struct
 
+        //tester print statements to make sure EKG data points are being read
+        //and stored correctly
         printf("%f", test.samples[num_samples].time_stamp);
         printf(",");
         printf("%f\n", test.samples[num_samples].voltage);
@@ -176,6 +186,7 @@ void populate_data(void)
 
     fclose(fp);
 }
+
 
 unsigned find_r_peaks(void)
 {
