@@ -131,9 +131,9 @@ void populate_data(void)
     //FILE *fp = fopen("GOOD OUTPUT.txt", "r");
 
     //FILE *fp = fopen("../ECG_MIT_Data/a_fib/04126_ecg2_10.csv", "r");
-    FILE *fp = fopen("../ECG_MIT_Data/a_fib/07879_ecg2_10.csv", "r");
+    //FILE *fp = fopen("../ECG_MIT_Data/a_fib/07879_ecg2_10.csv", "r");
     //FILE *fp = fopen("../ECG_MIT_Data/normal_sinus/16773_10_ecg1.csv", "r");
-    //FILE *fp = fopen("../ECG_MIT_Data/normal_sinus/18184_ecg2_60.csv", "r");
+    FILE *fp = fopen("../ECG_MIT_Data/normal_sinus/18184_ecg2_60.csv", "r");
 
     if(fp == NULL) {
         printf("cannot open file\n");
